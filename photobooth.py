@@ -115,7 +115,7 @@ def send_email(email, path):
     s.ehlo()
     s.starttls()
     s.ehlo()
-    s.login("charz", "hivincent1010")
+    s.login(USERNAME, PASSWORD)
     s.sendmail("charz@mit.edu", [email, "charz@mit.edu"] , msg.as_string())
     s.quit()
 
